@@ -22,7 +22,7 @@ func main() {
 
 	for {
 		fmt.Println("=== Selamat Datang ===")
-		fmt.Print("1. Kalkulator Sederhana \n2. Kalkulator BMI \n3. Kalkulator Suhu \n4. Kalkulator Diskon \n")
+		fmt.Print("1. Kalkulator Sederhana \n2. Kalkulator BMI \n3. Kalkulator Suhu \n4. Kalkulator Diskon \n5.Kalkulator massa \n")
 		fmt.Print("Pilih Kalkulator: ")
 		fmt.Fscanln(reader, &pilihan)
 		switch pilihan {
@@ -34,6 +34,8 @@ func main() {
 			kalkulator.Suhu()
 		case 4:
 			kalkulator.Diskon()
+		case 5:
+			kalkulator.Massa()
 		}
 	}
 
